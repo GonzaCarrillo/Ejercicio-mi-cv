@@ -1,0 +1,192 @@
+/* style.css */
+
+/* --- Configuración General --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f1f5f9; /* Slate-100 */
+    color: #1e293b; /* Slate-800 */
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* --- Contenedor Principal (La tarjeta blanca) --- */
+.main-container {
+    background-color: white;
+    width: 100%;
+    max-width: 1000px; /* container mx-auto */
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+    display: flex;
+    flex-direction: column; /* Por defecto en móvil es columna */
+}
+
+/* --- Layout Responsivo (Escritorio) --- */
+@media (min-width: 768px) {
+    .main-container {
+        flex-direction: row; /* Se pone al lado en pantallas grandes */
+    }
+    .sidebar {
+        width: 35%;
+        flex-shrink: 0;
+    }
+    .content {
+        width: 65%;
+    }
+}
+
+/* --- Barra Lateral (Izquierda) --- */
+.sidebar {
+    background-color: #1e293b; /* Slate-800 */
+    color: white;
+    padding: 32px;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #475569; /* Slate-600 */
+    margin-bottom: 16px;
+}
+
+.profile-name {
+    font-size: 1.875rem; /* 3xl */
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.profile-role {
+    color: #cbd5e1; /* Slate-300 */
+}
+
+/* --- Secciones de la Barra Lateral --- */
+.sidebar-section {
+    margin-top: 40px;
+}
+
+.sidebar-title {
+    font-size: 1.25rem; /* xl */
+    font-weight: 700;
+    border-bottom: 2px solid #475569;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    color: #f1f5f9;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #cbd5e1; /* Slate-300 */
+    font-size: 0.95rem;
+}
+
+.contact-list i {
+    width: 25px;
+    color: #94a3b8; /* Slate-400 */
+    margin-right: 10px;
+}
+
+.education-item h3 {
+    color: #f1f5f9;
+    font-weight: 700;
+}
+
+.education-item p {
+    color: #cbd5e1;
+}
+
+.education-item .location {
+    color: #94a3b8;
+    font-size: 0.875rem;
+}
+
+/* --- Contenido Principal (Derecha) --- */
+.content {
+    padding: 32px;
+}
+
+.section-title {
+    font-size: 1.5rem; /* 2xl */
+    font-weight: 700;
+    color: #334155; /* Slate-700 */
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.section-title i {
+    color: #64748b; /* Slate-500 */
+    margin-right: 12px;
+}
+
+.text-justify {
+    text-align: justify;
+    color: #475569; /* Slate-600 */
+    margin-bottom: 40px;
+}
+
+/* --- Experiencia --- */
+.job-item {
+    margin-bottom: 24px;
+}
+
+.job-title {
+    font-size: 1.125rem; /* lg */
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.job-meta {
+    color: #64748b; /* Slate-500 */
+    margin-bottom: 8px;
+}
+
+.job-tasks {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.job-tasks li {
+    margin-bottom: 4px;
+}
+
+/* --- Habilidades --- */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background-color: #e2e8f0; /* Slate-200 */
+    color: #334155; /* Slate-700 */
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 9999px; /* Pill shape */
+}
