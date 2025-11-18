@@ -4,42 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Gonzalo Alejo Carrillo</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-          },
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-</script>
+    
+    <script src="https://cdn.tailwindcss.com/3.4.5"></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <style>
         body {
+            /* Aplicamos la fuente Inter directamente aquí */
             font-family: 'Inter', sans-serif;
+            /* Un color de fondo de respaldo por si Tailwind tarda 1 segundo en cargar */
+            background-color: #f1f5f9;
         }
     </style>
 </head>
-<body class="bg-slate-100">
+<body class="bg-slate-100 text-slate-800">
     <div class="container mx-auto p-4 md:p-8">
         <div class="bg-white shadow-2xl rounded-2xl overflow-hidden">
             <div class="md:flex">
-                <!-- Barra Lateral -->
                 <aside class="w-full md:w-1/3 bg-slate-800 text-white p-8">
                     <div class="flex flex-col items-center text-center">
-                        <img src='./1755033363017.png' alt="Foto de perfil de Gonzalo Alejo Carrillo" class="w-32 h-32 rounded-full mb-4 ring-4 ring-slate-600 object-cover">
+                        <img src="./1755033363017.png" alt="Foto de perfil de Gonzalo Alejo Carrillo" class="w-32 h-32 rounded-full mb-4 ring-4 ring-slate-600 object-cover">
                         <h1 class="text-3xl font-bold text-white">Gonzalo Alejo Carrillo</h1>
                         <p class="text-slate-300 mt-1">Mozo de Salón y Ayudante de Cocina</p>
                     </div>
 
-                    <!-- Contacto -->
                     <div class="mt-10">
                         <h2 class="text-xl font-bold border-b-2 border-slate-600 pb-2 text-slate-100">CONTACTO</h2>
                         <ul class="mt-4 space-y-3 text-slate-300">
@@ -49,16 +39,15 @@
                             </li>
                             <li class="flex items-center">
                                 <i class="fas fa-envelope fa-fw mr-3 text-slate-400"></i>
-                                <span>gonzalocarrillo877@gmail.com</span>
+                                <span class="text-sm">gonzalocarrillo877@gmail.com</span>
                             </li>
                             <li class="flex items-center">
                                 <i class="fas fa-map-marker-alt fa-fw mr-3 text-slate-400"></i>
-                                <span>Calle 490, nro. 8, San Salvador de Jujuy</span>
+                                <span class="text-sm">Calle 490, nro. 8, San Salvador de Jujuy</span>
                             </li>
                         </ul>
                     </div>
-                     <!-- Educación -->
-                     <div class="mt-10">
+                      <div class="mt-10">
                         <h2 class="text-xl font-bold border-b-2 border-slate-600 pb-2 text-slate-100">EDUCACIÓN</h2>
                         <div class="mt-4">
                             <h3 class="font-bold text-slate-100">Estudiante de Ingeniería Informática</h3>
@@ -67,30 +56,26 @@
                         </div>
                     </div>
 
-                    <!-- Disponibilidad -->
                     <div class="mt-10">
                         <h2 class="text-xl font-bold border-b-2 border-slate-600 pb-2 text-slate-100">DISPONIBILIDAD</h2>
-                        <p class="mt-4 text-slate-300">Fines de semana y horarios nocturnos, charlable para adaptarme a la planificación de los eventos.</p>
+                        <p class="mt-4 text-slate-300 text-sm">Fines de semana y horarios nocturnos, charlable para adaptarme a la planificación de los eventos.</p>
                     </div>
                 </aside>
 
-                <!-- Contenido Principal -->
                 <main class="w-full md:w-2/3 p-8">
-                    <!-- Resumen Profesional -->
                     <div>
                         <h2 class="text-2xl font-bold text-slate-700"><i class="fas fa-user-tie mr-3 text-slate-500"></i>RESUMEN PROFESIONAL</h2>
-                        <p class="mt-4 text-slate-600 leading-relaxed">
+                        <p class="mt-4 text-slate-600 leading-relaxed text-justify">
                             Individuo proactivo y entusiasta con una fuerte vocación de servicio, buscando activamente la oportunidad de unirme al equipo de Catering & Eventos. Mi objetivo es contribuir al éxito de cada evento a través de una atención al detalle y un servicio excepcional al cliente, alineándome con la reputación de excelencia de la empresa. Poseo gran capacidad para trabajar en equipo y adaptarme a las necesidades específicas de bodas, eventos corporativos y otras celebraciones.
                         </p>
                     </div>
 
-                    <!-- Experiencia Laboral -->
                     <div class="mt-10">
                         <h2 class="text-2xl font-bold text-slate-700"><i class="fas fa-briefcase mr-3 text-slate-500"></i>EXPERIENCIA LABORAL</h2>
                         <div class="mt-6">
                             <h3 class="text-lg font-bold text-slate-800">Mozo de Salón y Eventos</h3>
                             <p class="text-slate-500">Bar - Welt | Calle Belgrano (2018 - 2020)</p>
-                            <ul class="list-disc list-inside mt-2 space-y-1 text-slate-600">
+                            <ul class="list-disc list-inside mt-2 space-y-1 text-slate-600 text-sm">
                                 <li>Responsable del servicio de mesa, asegurando una experiencia positiva para los comensales.</li>
                                 <li>Colaboración en el montaje y desmontaje de salones para eventos.</li>
                                 <li>Atención personalizada a los invitados, respondiendo a sus solicitudes de manera rápida y cortés.</li>
@@ -100,7 +85,7 @@
                         <div class="mt-6">
                             <h3 class="text-lg font-bold text-slate-800">Ayudante de Cocina</h3>
                             <p class="text-slate-500">Django, San Salvador de Jujuy (2020 - 2021)</p>
-                            <ul class="list-disc list-inside mt-2 space-y-1 text-slate-600">
+                            <ul class="list-disc list-inside mt-2 space-y-1 text-slate-600 text-sm">
                                 <li>Asistencia en la preparación y servicio de una amplia variedad de comidas.</li>
                                 <li>Mantenimiento del orden y la limpieza del área de trabajo.</li>
                                 <li>Manejo de caja y transacciones.</li>
@@ -108,16 +93,15 @@
                         </div>
                     </div>
 
-                    <!-- Habilidades -->
                     <div class="mt-10">
                         <h2 class="text-2xl font-bold text-slate-700"><i class="fas fa-cogs mr-3 text-slate-500"></i>HABILIDADES</h2>
                         <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="bg-slate-200 text-slate-700 text-sm font-medium mr-2 px-3 py-1 rounded-full">Servicio al Cliente</span>
-                            <span class="bg-slate-200 text-slate-700 text-sm font-medium mr-2 px-3 py-1 rounded-full">Trabajo en Equipo</span>
-                            <span class="bg-slate-200 text-slate-700 text-sm font-medium mr-2 px-3 py-1 rounded-full">Atención al Detalle</span>
-                            <span class="bg-slate-200 text-slate-700 text-sm font-medium mr-2 px-3 py-1 rounded-full">Adaptabilidad</span>
-                            <span class="bg-slate-200 text-slate-700 text-sm font-medium mr-2 px-3 py-1 rounded-full">Gestión del Tiempo</span>
-                            <span class="bg-slate-200 text-slate-700 text-sm font-medium mr-2 px-3 py-1 rounded-full">Comunicación Efectiva</span>
+                            <span class="bg-slate-200 text-slate-700 text-sm font-medium px-3 py-1 rounded-full">Servicio al Cliente</span>
+                            <span class="bg-slate-200 text-slate-700 text-sm font-medium px-3 py-1 rounded-full">Trabajo en Equipo</span>
+                            <span class="bg-slate-200 text-slate-700 text-sm font-medium px-3 py-1 rounded-full">Atención al Detalle</span>
+                            <span class="bg-slate-200 text-slate-700 text-sm font-medium px-3 py-1 rounded-full">Adaptabilidad</span>
+                            <span class="bg-slate-200 text-slate-700 text-sm font-medium px-3 py-1 rounded-full">Gestión del Tiempo</span>
+                            <span class="bg-slate-200 text-slate-700 text-sm font-medium px-3 py-1 rounded-full">Comunicación Efectiva</span>
                         </div>
                     </div>
                 </main>
